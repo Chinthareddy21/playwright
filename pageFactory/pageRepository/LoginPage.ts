@@ -28,7 +28,7 @@ export class LoginPage extends LoginPageObjects {
     }
 
     async verifyOTPVerifyButton(): Promise<void> {
-        await webActions.verifyElementContainsText(LoginPageObjects.OTP_VERIFY_BUTTON_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(LoginPageObjects.OTP_VERIFY_BUTTON_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/loginFunctionalityTests/loginCredentialsForValidatedUser.png' });
     }
 

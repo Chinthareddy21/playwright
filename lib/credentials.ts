@@ -13,9 +13,9 @@ export const credentials = {
     lastname: 'Dummy1',
     institutionname: 'Dummy.co.in',
     phonenumber: '9876543210',
-    usernameR: 'DDummy2196',
+    registration_username: 'DDummy2196',
     emailID: 'skyreaperrambo@gmail.com',
-    passwordR: 'D@21/a96/b8.dvG',
+    registration_password: 'D@21/a96/b8.dvG',
 
     // products
     product1: 'AU 400',

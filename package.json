@@ -7,6 +7,7 @@
     "test": "npx playwright test",
     "test:single": "npx playwright test --project=Chrome --headed",
     "test:login": "npx playwright test Login.test.ts --project=Chrome --headed",
+    "test:userCreation": "npx playwright test userCreation.test.ts --project=Chrome --headed",
     "test:parallel": "npx playwright test --grep @Smoke --project=Chrome",
     "test:serial": "npx playwright test --grep @Smoke --workers=1 --project=Chrome",
     "test:api": "npx playwright test --grep @API --workers=1 --project=Chrome",

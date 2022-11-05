@@ -45,6 +45,10 @@ export class WebActions {
         });
     }
 
+    async verifyURL(url: string): Promise<void> {
+        await expect(this.page).toHaveURL(url);
+    }
+
     async clickElement(locator: string): Promise<void> {
         await this.page.click(locator);
     }

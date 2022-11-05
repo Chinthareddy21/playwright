@@ -47,3 +47,25 @@
 {"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : failed"}
 {"level":"info","message":"Test Case Started : Verify error message on login by invalid credentials"}
 {"level":"info","message":"Test Case Completed : Verify error message on login by invalid credentials Status : passed"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Completed : Login by user Status : passed"}
+{"level":"info","message":"Test Case Started : verify OTP verification is displayed on succesful login by user"}
+{"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : passed"}
+{"level":"info","message":"Test Case Started : Verify error message on login by invalid credentials"}
+{"level":"info","message":"Test Case Completed : Verify error message on login by invalid credentials Status : passed"}
+{"level":"info","message":"Test Case Started : Navigation to Registration page"}
+{"level":"info","message":"Test Case Completed : Navigation to Registration page Status : passed"}
+{"level":"info","message":"Test Case Started : verify user can fill data"}
+{"level":"info","message":"Test Case Completed : verify user can fill data Status : failed"}
+{"level":"info","message":"Test Case Started : Verify password rule is displayed"}
+{"level":"info","message":"Test Case Completed : Verify password rule is displayed Status : interrupted"}
+{"level":"info","message":"Test Case Started : Navigation to Registration page"}
+{"level":"info","message":"Test Case Completed : Navigation to Registration page Status : passed"}
+{"level":"info","message":"Test Case Started : verify user can fill data"}
+{"level":"info","message":"Test Case Completed : verify user can fill data Status : passed"}
+{"level":"info","message":"Test Case Started : Verify password rule is displayed"}
+{"level":"info","message":"Test Case Completed : Verify password rule is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Completing registration"}
+{"level":"info","message":"Test Case Completed : Completing registration Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Email ID already exist error message was displayed"}
+{"level":"info","message":"Test Case Completed : Verify Email ID already exist error message was displayed Status : failed"}
