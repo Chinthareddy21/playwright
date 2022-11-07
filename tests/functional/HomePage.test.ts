@@ -1,40 +1,107 @@
 import test from '@lib/BaseTest';
 
 /* Verify login tests,
-Run command: npx cross-env ENV=qa npm run test:userCreation
+Run command: npx cross-env ENV=qa npm run test:Homepage
 */
 
-test.describe(`User creation tests`, () => {
-    test('Navigation to url', async ({ HomePage }) => {
+test.describe(`Homepage tests`, () => {
+    test('Accept cookies', async ({ HomePage }) => {
         await HomePage.navigateToURL();
-        await UserCreationPage.navigationToRegisterPage();
+        await HomePage.cookieAccept();
     });
 
-    test('verify user can fill data', async ({ UserCreationPage }) => {
-        await UserCreationPage.navigateToURL();
-        await UserCreationPage.navigationToRegisterPage();
-        await UserCreationPage.fillingUserDetails();
+    test('Verify cookie message displayed at bottom', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyCookieMessageDisplayedAtBottom();
     });
 
-    test('Verify password rule is displayed', async ({ UserCreationPage }) => {
-        await UserCreationPage.navigateToURL();
-        await UserCreationPage.navigationToRegisterPage();
-        await UserCreationPage.fillingUserDetails();
-        await UserCreationPage.passwordRuleVerificattion();
+    test('Verify logo is displayed', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.logocheck();
     });
 
-    test('Completing registration', async ({ UserCreationPage }) => {
-        await UserCreationPage.navigateToURL();
-        await UserCreationPage.navigationToRegisterPage();
-        await UserCreationPage.fillingUserDetails();
-        await UserCreationPage.completingRegistration();
+    test('Verify user was able to change country', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyUserCanChangeCountry();
     });
 
-    test('Verify Email ID already exist error message was displayed', async ({ UserCreationPage }) => {
-        await UserCreationPage.navigateToURL();
-        await UserCreationPage.navigationToRegisterPage();
-        await UserCreationPage.fillingUserDetails();
-        await UserCreationPage.completingRegistration();
-        await UserCreationPage.emailidAlreadyExistsErrorMessage();
+    test('Verify first element is after navigation bar', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.firstComponentIsAfterNavigationbar();
+    });
+
+    test('Verify clicking on item hovers and displays items', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.clickingDisplaysHoverItems();
+    });
+
+    test('Clicking arrow up moves to the top', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.VerifyClickingUpArrowMovesToTop();
+    });
+
+    test('Verify footer is visible and elements are clickable', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyFooterIsVisibleAndClickable();
+    });
+
+    test('Search from homepage', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.searchFromHomePage();
+    });
+
+    test('Verify user can click on store and other submenus', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.storeObjects();
+    });
+
+    test('Verify user can submit requests', async ({ HomePage }) => {
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.contactUsForm();
+    });
+
+    test('Verify user was able to change country after clearing cookies', async ({ HomePage }) => {
+        await HomePage.clearCookies();
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyUserCanChangeCountry();
+    });
+
+    test('Verify user was able to change language after clearing cookies', async ({ HomePage }) => {
+        await HomePage.clearCookies();
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyUserCanChangeCountry();
+    });
+
+    test('Verify user was able to load page after clearing cookies', async ({ HomePage }) => {
+        await HomePage.clearCookies();
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.verifyCookieMessageDisplayedAtBottom();
+    });
+
+    test('Verify default country and language is US and English clearing cookies', async ({ HomePage }) => {
+        await HomePage.clearCookies();
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.logocheck();
+    });
+
+    test('Verify page is loaded with header announcement bannerclearing cookies', async ({ HomePage }) => {
+        await HomePage.clearCookies();
+        await HomePage.navigateToURL();
+        await HomePage.cookieAccept();
+        await HomePage.logocheck();
     });
 });

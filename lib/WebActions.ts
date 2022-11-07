@@ -1,11 +1,9 @@
 import fs from 'fs';
-import * as CryptoJS from 'crypto-js';
 import type { Page } from '@playwright/test';
 import { BrowserContext, expect } from '@playwright/test';
 import { Workbook } from 'exceljs';
-import { testConfig } from '../testConfig';
 import path from 'path';
-const waitForElement = testConfig.waitForElement;
+const waitForElement = 30000;
 
 export class WebActions {
     readonly page: Page;
@@ -16,14 +14,6 @@ export class WebActions {
 
     async navigateToURL(url: string) {
         this.page.goto(url);
-    }
-
-    async decipherPassword(): Promise<string> {
-        const key = `SECRET`;
-        //ENCRYPT
-        // const cipher = CryptoJS.AES.encrypt('demouat',key);
-        // console.log(cipher.toString());
-        return CryptoJS.AES.decrypt(testConfig.password, key).toString(CryptoJS.enc.Utf8);
     }
 
     async waitForPageNavigation(event: string): Promise<void> {
@@ -119,7 +109,7 @@ export class WebActions {
     }
 
 
-    async verifyNewWindowUrlAndClick(context: BrowserContext, newWindowLocator: string, urlText: string,clickOnNewWindowLocator:string): Promise<void> {
+    async verifyNewWindowUrlAndClick(context: BrowserContext, newWindowLocator: string, urlText: string, clickOnNewWindowLocator: string): Promise<void> {
         const [newPage] = await Promise.all([
             context.waitForEvent('page'),
             this.page.click(newWindowLocator)
@@ -128,6 +118,11 @@ export class WebActions {
         expect(newPage.url()).toContain(urlText);
         await newPage.click(clickOnNewWindowLocator);
         await newPage.close();
+    }
+    
+    async verifyElementIsHidden(locator: string, errorMessage: string): Promise<void> {
+        await this.page.waitForSelector(locator, { state: `hidden`, timeout: waitForElement })
+            .catch(() => { throw new Error(`${errorMessage}`); });
     }
 
     async verifyElementContainsText(locator: string, text: string): Promise<void> {

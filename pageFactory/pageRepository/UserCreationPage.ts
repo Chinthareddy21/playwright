@@ -18,6 +18,11 @@ export class UserCreationPage extends userCreationPageObjects {
     async navigateToURL(): Promise<void> {
         await webActions.navigateToURL(url_s.baseURL);
     }
+
+    async clearCookies(): Promise<void> {
+        await this.page.context().clearCookies();
+    }
+    
     async navigationToRegisterPage(): Promise<void> {
         await webActions.clickElement(userCreationPageObjects.COOKIE_ACCEPT_XPATH);
         await this.page.waitForLoadState('load');
