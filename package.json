@@ -1,5 +1,5 @@
 {
-  "name": "playwright-typescipt-playwright-test",
+  "name": "playwright",
   "version": "0.18.0",
   "description": "Playwright Framework with Typescript",
   "main": "index.js",
