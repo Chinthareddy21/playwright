@@ -25,9 +25,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akshayp7/playwright-typescipt-playwright-test.git"
+    "url": "https://github.com/Chinthareddy21/playwright"
   },
-  "author": "Akshay Pai",
+  "author": "BhargavaReddyChinthareddy",
   "license": "MIT",
   "dependencies": {
     "@playwright/test": "^1.25.2",
