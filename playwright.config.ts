@@ -18,13 +18,13 @@ const config: PlaywrightTestConfig = {
   timeout: 2 * 60 * 1000,
 
   //sets timeout for each assertion
-  expect: { timeout: 5000 },
+  expect: { timeout: 60000 },
 
   //number of retries if test case fails
   retries: 0,
 
   //Reporters
-  reporter: [[`./CustomReporterConfig.ts`], [`experimental-allure-playwright`], [`html`]],
+  reporter: [[`./CustomReporterConfig.ts`], [`experimental-allure-playwright`], [`html`, { outputFolder: 'html-report', open: 'never' }]],
 
   projects: [
     {

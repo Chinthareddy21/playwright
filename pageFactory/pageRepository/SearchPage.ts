@@ -29,7 +29,6 @@ export class searchPage extends SearchPageObjects {
 
     async cookieAccept(): Promise<void> {
         await webActions.clickElement(searchPage.COOKIE_ACCEPT_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(searchPage.AGREE_XPATH);
     }
 
@@ -65,15 +64,12 @@ export class searchPage extends SearchPageObjects {
 
     async verifyCaptchaBeforeDownload(): Promise<void> {
         await webActions.clickElementJS(SearchPageObjects.TECHNICAL_DOCUMENT_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(SearchPageObjects.DOCUMENT_CATEGORIES_XPATH);
         await webActions.clickElement(SearchPageObjects.DATA_SAFETY_SHEET_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(SearchPageObjects.RESULT_CHECKBOX_01_XPATH);
         await webActions.clickElement(SearchPageObjects.RESULT_CHECKBOX_03_XPATH);
         await webActions.clickElement(SearchPageObjects.RESULT_CHECKBOX_05_XPATH);
         await webActions.clickElement(SearchPageObjects.DOWNLOAD_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsHidden(SearchPageObjects.CAPTCHA_XPATH, 'fail');
         await webActions.verifyElementIsDisplayed(SearchPageObjects.GENERATE_ZIP_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/searchResulltsPageFunctionality/captchaPresentWhileDownloadingOfDocuments.png' });
@@ -81,7 +77,6 @@ export class searchPage extends SearchPageObjects {
 
     async desiredResultsNumberPerPage(): Promise<void> {
         await webActions.clickElementJS(SearchPageObjects.TECHNICAL_DOCUMENT_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(SearchPageObjects.VIEW_XPATH);
         await webActions.clickElement(SearchPageObjects.VIEW_25_XPATH);
         await webActions.verifyElementIsDisplayed(SearchPageObjects.RESULT_BOX_DOWNLOAD, 'fail');
@@ -92,7 +87,6 @@ export class searchPage extends SearchPageObjects {
         await this.page.screenshot({ path: './screenshot/searchResulltsPageFunctionality/viewTabsFunctionalityOnSearchResultsPage2.png' });
         await webActions.clickElement(SearchPageObjects.VIEW_XPATH);
         await webActions.clickElement(SearchPageObjects.VIEW_100_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(SearchPageObjects.RESULT_BOX_DOWNLOAD, 'fail');
         await this.page.screenshot({ path: './screenshot/searchResulltsPageFunctionality/viewTabsFunctionalityOnSearchResultsPage3.png' });
     }

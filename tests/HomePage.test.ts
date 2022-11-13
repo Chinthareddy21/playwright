@@ -59,6 +59,7 @@ test.describe(`Homepage tests`, () => {
     });
 
     test('Verify user can click on store and other submenus', async ({ HomePage }) => {
+        test.setTimeout(5 * 60 * 1000);
         await HomePage.navigateToURL();
         await HomePage.cookieAccept();
         await HomePage.storeObjects();

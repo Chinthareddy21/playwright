@@ -3,7 +3,7 @@ import type { Page } from '@playwright/test';
 import { BrowserContext, expect } from '@playwright/test';
 import { Workbook } from 'exceljs';
 import path from 'path';
-const waitForElement = 5000;
+const waitForElement = 120000;
 
 export class WebActions {
     readonly page: Page;
@@ -119,7 +119,7 @@ export class WebActions {
         await newPage.click(clickOnNewWindowLocator);
         await newPage.close();
     }
-    
+
     async verifyElementIsHidden(locator: string, errorMessage: string): Promise<void> {
         await this.page.waitForSelector(locator, { state: `hidden`, timeout: waitForElement })
             .catch(() => { throw new Error(`${errorMessage}`); });

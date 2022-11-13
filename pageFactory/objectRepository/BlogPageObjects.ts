@@ -45,7 +45,7 @@ export class BlogPageObjects {
     protected static ARTICLE_VIEW_VALUE_XPATH = '//*[@id="blogPageSize"]';
     protected static CARD_TITLE_XPATH = '//*[@id="main-container"]/div[1]/div/div[1]/h1';
     protected static LATEST_ARTICLE_XPATH = '//*[@id="coverList"]/div[1]/h3';
-    protected static SEARCH_1_XPATH = '//div[3]/div[2]/div/div[1]/div[4]/div[2]/div[2]/div[2]/div/div[2]/ul/li';
+    protected static SEARCH_RESULT_IMAGE_XPATH = '//div[3]/div[2]/div/div[1]/div[4]/div[2]/div[3]/div[1]/a/div[1]/img';
     protected static PAGENUM_1_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[1]';
     protected static PAGENUM_2_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[2]';
     protected static PAGENUM_3_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[3]';

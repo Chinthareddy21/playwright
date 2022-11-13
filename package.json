@@ -4,7 +4,7 @@
   "description": "Playwright Framework with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "npx playwright test --project=Chrome --headed",
     "test:single": "npx playwright test --project=Chrome --headed",
     "test:login": "npx playwright test Login.test.ts --project=Chrome --headed",
     "test:userCreation": "npx playwright test userCreation.test.ts --project=Chrome --headed",

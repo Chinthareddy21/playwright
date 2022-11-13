@@ -39,7 +39,7 @@ export class HomePage extends HomePageObjects {
         await webActions.clickElement(HomePageObjects.ENGLISH_XPATH);
         await webActions.clickElement(HomePageObjects.ENTER_XPATH);
         await this.page.waitForLoadState('load');
-        await webActions.verifyElementIsDisplayed(HomePageObjects.LOGO_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(HomePageObjects.CONTACT_US_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/loginPageUpdatedTests/changeLanguagueAndVerifyThePersistence.png' });
     }
 
@@ -55,7 +55,7 @@ export class HomePage extends HomePageObjects {
         await webActions.enterElementText(HomePageObjects.COUNTRY_EDITBOX_XPATH, 'United States');
         await webActions.clickElement(HomePageObjects.ENTER_XPATH);
         await this.page.waitForLoadState('load');
-        await webActions.verifyElementIsDisplayed(HomePageObjects.LOGO_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(HomePageObjects.CONTACT_US_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/countrySelectorFunctionality.png' });
     }
 

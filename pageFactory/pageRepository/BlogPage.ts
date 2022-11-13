@@ -34,32 +34,26 @@ export class BlogPage extends BlogPageObjects {
 
     async blogsAreClickbaleOnPage(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_1_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage1.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_2_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage2.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_3_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage3.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_4_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage4.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_5_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage5.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_6_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage6.png' });
     }
@@ -114,7 +108,7 @@ export class BlogPage extends BlogPageObjects {
         await webActions.enterElementText(BlogPageObjects.SEARCH_XPATH, 'Automation');
         await this.page.keyboard.press('Enter');
         await this.page.waitForLoadState('load');
-        await webActions.verifyElementIsDisplayed(BlogPageObjects.SEARCH_RESULT1_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(BlogPageObjects.SEARCH_RESULT_IMAGE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/searchOptionOnBlogs.png' });
     }
 

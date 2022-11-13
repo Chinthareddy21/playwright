@@ -1,8 +1,5 @@
 import { test as baseTest } from '@playwright/test';
 import { LoginPage } from '@pages/LoginPage';
-import { MyAccountPage } from '@pages/MyAccountPage';
-import { MyAddressesPage } from '@pages/MyAddressesPage'
-import { MyPersonalInformationPage } from '@pages/MyPersonalInformationPage';
 import { UserCreationPage } from '@pages/UserCreationPage';
 import { HomePage } from '@pages/HomePage';
 import { BlogPage } from '@pages/BlogPage';
@@ -16,9 +13,6 @@ const test = baseTest.extend<{
     BlogPage: BlogPage;
     ProductsPage: ProductsPage;
     SearchPage: searchPage;
-    myAccountPage: MyAccountPage;
-    myAddressesPage: MyAddressesPage;
-    myPersonalInformationPage: MyPersonalInformationPage;
 
 }>({
     loginPage: async ({ page }, use) => {
@@ -38,15 +32,6 @@ const test = baseTest.extend<{
     },
     SearchPage: async ({ page }, use) => {
         await use(new searchPage(page));
-    },
-    myAccountPage: async ({ page }, use) => {
-        await use(new MyAccountPage(page));
-    },
-    myAddressesPage: async ({ page }, use) => {
-        await use(new MyAddressesPage(page));
-    },
-    myPersonalInformationPage: async ({ page }, use) => {
-        await use(new MyPersonalInformationPage(page));
     }
 });
 
