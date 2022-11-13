@@ -15,16 +15,16 @@ const config: PlaywrightTestConfig = {
   globalTeardown: `./global-teardown`,
 
   //sets timeout for each test case
-  timeout: 5 * 60 * 1000,
+  timeout: 2 * 60 * 1000,
 
   //sets timeout for each assertion
-  expect: { timeout: 120 * 1000 },
+  expect: { timeout: 5000 },
 
   //number of retries if test case fails
   retries: 0,
 
   //Reporters
-  reporter: [[`./CustomReporterConfig.ts`], [`experimental-allure-playwright`], [`html`, { outputFolder: 'html-report', open: 'never' }]],
+  reporter: [[`./CustomReporterConfig.ts`], [`experimental-allure-playwright`], [`html`]],
 
   projects: [
     {
