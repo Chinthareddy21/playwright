@@ -3,7 +3,7 @@ import type { Page } from '@playwright/test';
 import { BrowserContext, expect } from '@playwright/test';
 import { Workbook } from 'exceljs';
 import path from 'path';
-const waitForElement = 30000;
+const waitForElement = 5000;
 
 export class WebActions {
     readonly page: Page;
