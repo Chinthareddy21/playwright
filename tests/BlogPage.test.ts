@@ -5,11 +5,6 @@ Run command: npx cross-env ENV=qa npm run test:Blogpage
 */
 
 test.describe(`Blogpage tests`, () => {
-    test('Accept cookies', async ({ BlogPage }) => {
-        await BlogPage.navigateToURL();
-        await BlogPage.cookieAccept();
-    });
-
     test('Verify welcome is not chopped off', async ({ BlogPage }) => {
         await BlogPage.navigateToURL();
         await BlogPage.cookieAccept();
@@ -17,6 +12,7 @@ test.describe(`Blogpage tests`, () => {
     });
 
     test('Verify title blog has read more links associated with cards', async ({ BlogPage }) => {
+        test.setTimeout(5 * 60 * 1000)
         await BlogPage.navigateToURL();
         await BlogPage.cookieAccept();
         await BlogPage.readMoreHasLinkAssociatedWithItOnBlogCards();

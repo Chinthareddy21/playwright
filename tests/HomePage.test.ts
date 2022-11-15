@@ -5,11 +5,6 @@ Run command: npx cross-env ENV=qa npm run test:Homepage
 */
 
 test.describe(`Homepage tests`, () => {
-    test('Accept cookies', async ({ HomePage }) => {
-        await HomePage.navigateToURL();
-        await HomePage.cookieAccept();
-    });
-
     test('Verify cookie message displayed at bottom', async ({ HomePage }) => {
         await HomePage.navigateToURL();
         await HomePage.cookieAccept();
