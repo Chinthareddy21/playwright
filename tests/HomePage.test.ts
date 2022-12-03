@@ -42,6 +42,7 @@ test.describe(`Homepage tests`, () => {
     });
 
     test('Verify footer is visible and elements are clickable', async ({ HomePage }) => {
+        test.setTimeout(5 * 60 * 1000);
         await HomePage.navigateToURL();
         await HomePage.cookieAccept();
         await HomePage.verifyFooterIsVisibleAndClickable();

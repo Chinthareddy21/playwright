@@ -8,7 +8,7 @@ export class ProductsPageObjects {
     protected static IMAGE_5_XPATH = `//*[@id="main-container"]/div[2]/div/div[1]/div/div[2]/div/div[5]/img`;
     protected static REQUESTMORE_XPATH = `//*[@id="main-container"]/div[2]/div/div[2]/div[4]/div/div/a`;
     protected static SPECIFICATIONS_XPATH = `//a[@id='tab-specifications']`;
-    protected static TEST_MENU_XPATH = `(//*[@id="tab-test-menu"])[1]`;
+    protected static TEST_MENU_XPATH = `//a[@id='tab-test-menu']`;
     protected static DOCUMENTS_XPATH = `//*[@id="tab-documents"]`;
     protected static USER_GUIDE_XPATH = `(//*[@id="Layer_1"])[1]`;
     protected static REQUEST_QUOTE_XPATH = `//*[@id="main-container"]/div[3]/div/div/div/div/div[5]/div/div[3]/div[1]/div/div[2]/a[1]`;

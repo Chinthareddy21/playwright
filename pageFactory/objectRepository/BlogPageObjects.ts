@@ -51,5 +51,6 @@ export class BlogPageObjects {
     protected static PAGENUM_3_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[3]';
     protected static PAGENUM_4_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[4]';
     protected static PAGENUM_5_XPATH = '//div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div[2]/ul/li[5]';
-    protected static SHARE_XPATH = '//div[3]/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/span[2]'
+    protected static SHARE_XPATH = '//div[3]/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/span[2]';
+    protected static LEARN_MORE_XPATH = '//*[@id="main-container"]/div[2]/div[2]/div/div/a';
 }

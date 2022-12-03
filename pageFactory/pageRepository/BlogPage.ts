@@ -87,7 +87,7 @@ export class BlogPage extends BlogPageObjects {
         await webActions.clickElement(BlogPageObjects.TITLE_BLOG_1_XPATH)
         await webActions.clickElement(BlogPageObjects.READMORE_1_XPATH);
         await this.page.waitForLoadState('load');
-        await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(BlogPageObjects.LEARN_MORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/readMoreHasLinkAssociatedWithItOnBlogCards.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.TITLE_BLOG_2_XPATH);
