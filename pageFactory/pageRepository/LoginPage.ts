@@ -20,11 +20,9 @@ export class LoginPage extends LoginPageObjects {
     }
 
     async loginToApplication(): Promise<void> {
-        await this.page.waitForLoadState('load');
         await webActions.enterElementText(LoginPageObjects.USERNAME_EDITBOX_ID, credentials.username);
         await webActions.enterElementText(LoginPageObjects.PASSWORD_EDITBOX_ID, credentials.password);
         await webActions.clickElement(LoginPageObjects.LOGIN_BUTTON_ID);
-        await this.page.waitForLoadState('load');
     }
 
     async verifyOTPVerifyButton(): Promise<void> {
@@ -34,22 +32,18 @@ export class LoginPage extends LoginPageObjects {
 
     async loginToApplicationByInvalidUsername(): Promise<void> {
         await this.page.goBack();
-        await this.page.waitForLoadState('load');
         await webActions.enterElementText(LoginPageObjects.USERNAME_EDITBOX_ID, credentials.invalid_username);
         await webActions.enterElementText(LoginPageObjects.PASSWORD_EDITBOX_ID, credentials.password);
         await webActions.clickElement(LoginPageObjects.LOGIN_BUTTON_ID);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(LoginPageObjects.INVALID_USERNAME_OR_PASSWORD_ERROR_XPATH, 'fail')
         await this.page.screenshot({ path: './screenshot/loginFunctionalityTests/loginByInvalidUsername.png' });
     }
 
     async loginToApplicationByPassword(): Promise<void> {
         await this.page.goBack();
-        await this.page.waitForLoadState('load');
         await webActions.enterElementText(LoginPageObjects.USERNAME_EDITBOX_ID, credentials.username);
         await webActions.enterElementText(LoginPageObjects.PASSWORD_EDITBOX_ID, credentials.invalid_password);
         await webActions.clickElement(LoginPageObjects.LOGIN_BUTTON_ID);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(LoginPageObjects.INVALID_USERNAME_OR_PASSWORD_ERROR_XPATH, 'fail')
         await this.page.screenshot({ path: './screenshot/loginFunctionalityTests/loginByInvalidPassword.png' });
     }

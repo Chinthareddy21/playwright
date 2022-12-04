@@ -25,12 +25,10 @@ export class HomePage extends HomePageObjects {
 
     async cookieAccept(): Promise<void> {
         await webActions.clickElement(HomePageObjects.COOKIE_ACCEPT_XPATH);
-        await this.page.waitForLoadState('load');
     }
 
     async verifyCookieMessageDisplayedAtBottom(): Promise<void> {
         await webActions.clickElement(HomePageObjects.AGREE_XPATH);
-        await this.page.waitForLoadState('load');
     }
 
     async verifyUserCanChangeLanguage(): Promise<void> {
@@ -38,7 +36,6 @@ export class HomePage extends HomePageObjects {
         await webActions.clickElement(HomePageObjects.LANGUAGE_XPATH);
         await webActions.clickElement(HomePageObjects.ENGLISH_XPATH);
         await webActions.clickElement(HomePageObjects.ENTER_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.CONTACT_US_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/loginPageUpdatedTests/changeLanguagueAndVerifyThePersistence.png' });
     }
@@ -54,7 +51,6 @@ export class HomePage extends HomePageObjects {
         await webActions.clickElement(HomePageObjects.COUNTRY_XPATH);
         await webActions.enterElementText(HomePageObjects.COUNTRY_EDITBOX_XPATH, 'United States');
         await webActions.clickElement(HomePageObjects.ENTER_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.CONTACT_US_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/countrySelectorFunctionality.png' });
     }
@@ -143,7 +139,6 @@ export class HomePage extends HomePageObjects {
         await webActions.clickElement(HomePageObjects.SEARCH_BOX_XPATH);
         await webActions.enterElementText(HomePageObjects.SEARCH_BOX_XPATH, credentials.product2);
         await this.page.keyboard.press('Enter');
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.SEARCH_RESULT_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/searchOnHomePage.png' });
     }
@@ -161,43 +156,36 @@ export class HomePage extends HomePageObjects {
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.ORDER_AND_STATUS_TRACKING_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.CUSTOMER_ACC_NUM_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.SCHEDULED_ORDERS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.USERNAME_EDITBOX_ID, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus1.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.QUICK_ORDERS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyURL('https://www.beckmancoulter.com/wsrportal/page/quickOrderInitPage');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus2.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.SHOPPING_LIISTS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.USERNAME_EDITBOX_ID, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus3.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.INVOICES_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.USERNAME_EDITBOX_ID, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus4.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.SHOPPING_FAQS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyURL('https://www.beckmancoulter.com/en/support/faqs');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus5.png' });
         await this.page.goBack();
         await this.page.locator(HomePageObjects.STORE_XPATH).hover();
         await webActions.clickElement(HomePageObjects.QUOTE_REQUESTS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(HomePageObjects.ITEM_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/storeOptionAndExploreOtherSubMenus6.png' });
     }

@@ -24,7 +24,6 @@ export class BlogPage extends BlogPageObjects {
 
     async cookieAccept(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.COOKIE_ACCEPT_XPATH);
-        await this.page.waitForLoadState('load');
     }
 
     async welcomeBanner(): Promise<void> {
@@ -66,19 +65,15 @@ export class BlogPage extends BlogPageObjects {
 
     async paginationOnBlogPage(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.NEXT_PAGE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(BlogPageObjects.PAGENUM_4_XPATH, '4');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/paginationOnBlogPage1.png' });
         await webActions.clickElement(BlogPageObjects.BEFORE_PAGE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(BlogPageObjects.PAGENUM_4_XPATH, '4');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/paginationOnBlogPage2.png' });
         await webActions.clickElement(BlogPageObjects.LAST_PAGE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(BlogPageObjects.PAGENUM_4_XPATH, '14');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/paginationOnBlogPage3.png' });
         await webActions.clickElement(BlogPageObjects.FIRST_PAGE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(BlogPageObjects.PAGENUM_4_XPATH, '4');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/paginationOnBlogPage4.png' });
     }
@@ -86,19 +81,16 @@ export class BlogPage extends BlogPageObjects {
     async readMoreHasLinkAssociatedWithItOnBlogCards(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.TITLE_BLOG_1_XPATH)
         await webActions.clickElement(BlogPageObjects.READMORE_1_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.LEARN_MORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/readMoreHasLinkAssociatedWithItOnBlogCards.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.TITLE_BLOG_2_XPATH);
         await webActions.clickElement(BlogPageObjects.READMORE_2_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/readMoreHasLinkAssociatedWithItOnBlogCards.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.TITLE_BLOG_3_XPATH);
         await webActions.clickElement(BlogPageObjects.READMORE_3_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/readMoreHasLinkAssociatedWithItOnBlogCards.png' });
     }
@@ -107,19 +99,16 @@ export class BlogPage extends BlogPageObjects {
         await webActions.clickElement(BlogPageObjects.SEARCH_XPATH);
         await webActions.enterElementText(BlogPageObjects.SEARCH_XPATH, 'Automation');
         await this.page.keyboard.press('Enter');
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SEARCH_RESULT_IMAGE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/searchOptionOnBlogs.png' });
     }
 
     async userCanDirectlyNavigateToDesiredBlogFromTagsSection(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.BLOG_TAG_1_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SEARCH_RESULT1_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/userCanDirectlyNavigateToDesiredBlogFromTagsSection.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_TAG_5_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(BlogPageObjects.SEARCH_RESULT1_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/userCanDirectlyNavigateToDesiredBlogFromTagsSection.png' });
     }

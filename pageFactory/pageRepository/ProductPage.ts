@@ -25,51 +25,41 @@ export class ProductsPage extends ProductsPageObjects {
 
     async cookieAccept(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.COOKIE_ACCEPT_XPATH);
-        await this.page.waitForLoadState('load');
     }
 
     async clickingOnImages(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.IMAGE_4_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUESTMORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/description_ImagesAndOtherLinksOnProductDetailPage2.png' });
         await webActions.clickElement(ProductsPageObjects.IMAGE_3_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUESTMORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/description_ImagesAndOtherLinksOnProductDetailPage3.png' });
         await webActions.clickElement(ProductsPageObjects.IMAGE_5_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUESTMORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/description_ImagesAndOtherLinksOnProductDetailPage4.png' });
         await webActions.clickElement(ProductsPageObjects.IMAGE_2_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUESTMORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/description_ImagesAndOtherLinksOnProductDetailPage5.png' });
         await webActions.clickElement(ProductsPageObjects.REQUESTMORE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(ProductsPageObjects.ITEM_NUMBER_XPATH, 'A91961');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/description_ImagesAndOtherLinksOnProductDetailPage6.png' });
     }
 
     async specificationTab(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.SPECIFICATIONS_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.SPECIFICATION_COLUMN_1_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/specificationTabUnderProductDetailsPage.png' });
     }
 
     async addToCartFunction(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.TEST_MENU_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(ProductsPageObjects.ADD_TO_CART_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUESTMORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/requestQuoteFunctionality.png' });
     }
 
     async testMenuFunction(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.TEST_MENU_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.REQUEST_QUOTE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/testMenuTabUnderProductDetailsPage.png' });
     }
@@ -99,16 +89,13 @@ export class ProductsPage extends ProductsPageObjects {
 
     async requestQouteFunction(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.TEST_MENU_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.clickElement(ProductsPageObjects.REQUEST_QUOTE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementContainsText(ProductsPageObjects.ITEM_NUMBER_XPATH, '7S109');
         await this.page.screenshot({ path: './screenshot/productDetailsPageTests/requestQuoteFunctionality.png' });
     }
 
     async shareFunction(): Promise<void> {
         await webActions.clickElement(ProductsPageObjects.SHARE_XPATH);
-        await this.page.waitForLoadState('load');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.SHARE_LINKEDIN_XPATH, 'fail');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.SHARE_TWITTER_XPATH, 'fail');
         await webActions.verifyElementIsDisplayed(ProductsPageObjects.SHARE_FACEBOOK_XPATH, 'fail');
