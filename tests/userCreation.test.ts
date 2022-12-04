@@ -31,6 +31,7 @@ test.describe(`User creation tests`, () => {
     });
 
     test('Verify Email ID already exist error message was displayed', async ({ UserCreationPage }) => {
+        test.setTimeout(2 * 60 * 1000)
         await UserCreationPage.navigateToURL();
         await UserCreationPage.navigationToRegisterPage();
         await UserCreationPage.fillingUserDetails();

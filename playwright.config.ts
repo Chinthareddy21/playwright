@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
   globalTeardown: `./global-teardown`,
 
   //sets timeout for each test case
-  timeout: 2 * 60 * 1000,
+  timeout: 5 * 60 * 1000,
 
   //sets timeout for each assertion
   expect: { timeout: 120000 },

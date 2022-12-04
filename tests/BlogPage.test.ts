@@ -12,13 +12,13 @@ test.describe(`Blogpage tests`, () => {
     });
 
     test('Verify title blog has read more links associated with cards', async ({ BlogPage }) => {
-        test.setTimeout(5 * 60 * 1000)
         await BlogPage.navigateToURL();
         await BlogPage.cookieAccept();
         await BlogPage.readMoreHasLinkAssociatedWithItOnBlogCards();
     });
 
     test('Verify user can view desired number of articles', async ({ BlogPage }) => {
+        test.setTimeout(2 * 60 * 1000)
         await BlogPage.navigateToURL();
         await BlogPage.cookieAccept();
         await BlogPage.latestArticleViewBlogPage();
@@ -56,6 +56,7 @@ test.describe(`Blogpage tests`, () => {
     });
 
     test('Verify user can view desired number of articles after clearing cookies', async ({ BlogPage }) => {
+        test.setTimeout(2 * 60 * 1000)
         await BlogPage.clearCookies();
         await BlogPage.navigateToURL();
         await BlogPage.cookieAccept();

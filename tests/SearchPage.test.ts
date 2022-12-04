@@ -32,7 +32,7 @@ test.describe(`search page tests`, () => {
     test('Verify user can view desired number of results', async ({ SearchPage }) => {
         await SearchPage.navigateToSearchPagee();
         await SearchPage.cookieAccept();
-        await SearchPage.desiredResultsNumberPerPage();
+        await SearchPage.desiredNumberOfResultsPerPage();
     });
 
     test('Verify user can click on all options', async ({ SearchPage }) => {
@@ -66,6 +66,6 @@ test.describe(`search page tests`, () => {
         await SearchPage.clearCookies();
         await SearchPage.navigateToSearchPagee();
         await SearchPage.cookieAccept();
-        await SearchPage.desiredResultsNumberPerPage();
+        await SearchPage.desiredNumberOfResultsPerPage();
     });
 });

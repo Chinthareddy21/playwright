@@ -75,7 +75,7 @@ export class searchPage extends SearchPageObjects {
         await this.page.screenshot({ path: './screenshot/searchResulltsPageFunctionality/captchaPresentWhileDownloadingOfDocuments.png' });
     }
 
-    async desiredResultsNumberPerPage(): Promise<void> {
+    async desiredNumberOfResultsPerPage(): Promise<void> {
         await webActions.clickElementJS(SearchPageObjects.TECHNICAL_DOCUMENT_XPATH);
         await webActions.clickElement(SearchPageObjects.VIEW_XPATH);
         await webActions.clickElement(SearchPageObjects.VIEW_25_XPATH);
