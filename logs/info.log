@@ -2666,3 +2666,11 @@
 {"level":"info","message":"Test Case Completed : Completing registration Status : passed"}
 {"level":"info","message":"Test Case Started : Verify Email ID already exist error message was displayed"}
 {"level":"info","message":"Test Case Completed : Verify Email ID already exist error message was displayed Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}

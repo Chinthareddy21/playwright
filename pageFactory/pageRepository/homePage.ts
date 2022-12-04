@@ -85,40 +85,33 @@ export class HomePage extends HomePageObjects {
 
     async verifyFooterIsVisibleAndClickable(): Promise<void> {
         await webActions.clickElement(HomePageObjects.AUTOMATION_SYSTEMS_XPATH);
-        await this.page.waitForLoadState("load");
         await webActions.verifyURL('https://www.beckmancoulter.com/en/products/automation');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_Automation.png' });
         await this.page.goBack();
         await webActions.clickElement(HomePageObjects.EDUCATION_XPATH);
-        await this.page.waitForLoadState("load");
         await webActions.verifyURL('https://www.beckmancoulter.com/en/learning-and-events');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_education.png' });
         await this.page.goBack();
         await webActions.clickElement(HomePageObjects.FOOTER_OVERVIEW_XPATH);
-        await this.page.waitForLoadState("load");
         await webActions.verifyURL('https://www.beckmancoulter.com/en/about-beckman-coulter');
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_overview.png' });
         await this.page.goBack();
         await webActions.clickElement(HomePageObjects.SUBSCRIBE_XPATH);
-        await this.page.waitForLoadState("load");
         await this.page.locator(HomePageObjects.NEWSLETTER_XPATH).isVisible();
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_subscribe.png' });
         await webActions.clickElement(HomePageObjects.PARITCLE_COUNTER_XPATH);
-        await this.page.waitForLoadState("load");
         await this.page.locator(HomePageObjects.REQUEST_QUOTE_XPATH).isVisible();
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_particle_counter.png' });
     }
 
     async verifyFollowUsLinkedIn(): Promise<void> {
         await webActions.clickElement(HomePageObjects.LINKED_IN_XPATH);
-        await this.page.waitForLoadState("load");
         await this.page.locator(HomePageObjects.LINKEDIN_NAME_XPATH).isVisible();
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_linked_in.png' });
     }
 
     async verifyFollowUsYoutube(): Promise<void> {
         await webActions.clickElement(HomePageObjects.YOUTUBE_XPATH);
-        await this.page.waitForLoadState("load");
         await this.page.locator(HomePageObjects.YOUTUBE_NAME_XPATH).isVisible();
         await this.page.screenshot({ path: './screenshot/homePageFunctionalityTests/footerVisibility_youtube.png' });
     }

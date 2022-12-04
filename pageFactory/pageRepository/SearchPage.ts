@@ -36,7 +36,6 @@ export class searchPage extends SearchPageObjects {
         await webActions.clickElement(SearchPageObjects.SEARCH_BOX_XPATH);
         await webActions.enterElementText(SearchPageObjects.SEARCH_BOX_XPATH, credentials.product1);
         await this.page.keyboard.press('Enter');
-        await this.page.waitForLoadState('load')
         await webActions.verifyElementIsDisplayed(SearchPageObjects.RESULT_01_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/searchResulltsPageFunctionality/searchResultsFunctionalityOnHomePage.png' });
 
