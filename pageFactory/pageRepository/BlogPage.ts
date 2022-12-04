@@ -34,7 +34,7 @@ export class BlogPage extends BlogPageObjects {
 
     async blogsAreClickbaleOnPage(): Promise<void> {
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_1_XPATH);
-        await webActions.verifyElementIsDisplayed(BlogPageObjects.SHARE_XPATH, 'fail');
+        await webActions.verifyElementIsDisplayed(BlogPageObjects.LEARN_MORE_XPATH, 'fail');
         await this.page.screenshot({ path: './screenshot/blogFunctionalityTests/blogsAreClickbaleOnPage1.png' });
         await this.page.goBack();
         await webActions.clickElement(BlogPageObjects.BLOG_CARD_2_XPATH);

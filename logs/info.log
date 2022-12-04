@@ -1195,3 +1195,427 @@
 {"level":"info","message":"Test Case Completed : Completing registration Status : passed"}
 {"level":"info","message":"Test Case Started : Verify Email ID already exist error message was displayed"}
 {"level":"info","message":"Test Case Completed : Verify Email ID already exist error message was displayed Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on blogs"}
+{"level":"info","message":"Test Case Completed : Verify user can click on blogs Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can use pagination options"}
+{"level":"info","message":"Test Case Completed : Verify user can use pagination options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by click on tags"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by click on tags Status : passed"}
+{"level":"info","message":"Test Case Started : Verify blog cards and tags were loaded after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify blog cards and tags were loaded after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles after clearing cookies Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us linked in Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us youtube"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us youtube Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us twitter"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us twitter Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us facebook"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us facebook Status : passed"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Completed : Verify cookie message displayed at bottom Status : passed"}
+{"level":"info","message":"Test Case Started : Verify logo is displayed"}
+{"level":"info","message":"Test Case Completed : Verify logo is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country Status : passed"}
+{"level":"info","message":"Test Case Started : Verify first element is after navigation bar"}
+{"level":"info","message":"Test Case Completed : Verify first element is after navigation bar Status : passed"}
+{"level":"info","message":"Test Case Started : Verify clicking on item hovers and displays items"}
+{"level":"info","message":"Test Case Completed : Verify clicking on item hovers and displays items Status : passed"}
+{"level":"info","message":"Test Case Started : Clicking arrow up moves to the top"}
+{"level":"info","message":"Test Case Completed : Clicking arrow up moves to the top Status : passed"}
+{"level":"info","message":"Test Case Started : Verify footer is visible and elements are clickable"}
+{"level":"info","message":"Test Case Completed : Verify footer is visible and elements are clickable Status : passed"}
+{"level":"info","message":"Test Case Started : Search from homepage"}
+{"level":"info","message":"Test Case Completed : Search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on store and other submenus"}
+{"level":"info","message":"Test Case Completed : Verify user can click on store and other submenus Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can submit requests"}
+{"level":"info","message":"Test Case Completed : Verify user can submit requests Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change language after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change language after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to load page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to load page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify default country and language is US and English clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify default country and language is US and English clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify page is loaded with header announcement bannerclearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify page is loaded with header announcement bannerclearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Completed : Login by user Status : passed"}
+{"level":"info","message":"Test Case Started : verify OTP verification is displayed on succesful login by user"}
+{"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : passed"}
+{"level":"info","message":"Test Case Started : Verify error message on login by invalid credentials"}
+{"level":"info","message":"Test Case Completed : Verify error message on login by invalid credentials Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Completed : Verify user can click on images Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on share button"}
+{"level":"info","message":"Test Case Completed : Verify user can click on share button Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on specification tab"}
+{"level":"info","message":"Test Case Completed : Verify user can click on specification tab Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on add to cart under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on add to cart under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on request quote under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on request quote under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Completed : Verify user can search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters"}
+{"level":"info","message":"Test Case Completed : Verify user can able to apply filters Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can download multiple documents"}
+{"level":"info","message":"Test Case Completed : Verify user can download multiple documents Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user captcha was displayed on download page"}
+{"level":"info","message":"Test Case Completed : Verify user captcha was displayed on download page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of results"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of results Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on all options"}
+{"level":"info","message":"Test Case Completed : Verify user can click on all options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can able to apply filters after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can download multiple documents after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can download multiple documents after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user captcha was displayed on download page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user captcha was displayed on download page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of results after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of results after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Navigation to Registration page"}
+{"level":"info","message":"Test Case Completed : Navigation to Registration page Status : passed"}
+{"level":"info","message":"Test Case Started : verify user can fill data"}
+{"level":"info","message":"Test Case Completed : verify user can fill data Status : passed"}
+{"level":"info","message":"Test Case Started : Verify password rule is displayed"}
+{"level":"info","message":"Test Case Completed : Verify password rule is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Completing registration"}
+{"level":"info","message":"Test Case Completed : Completing registration Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Email ID already exist error message was displayed"}
+{"level":"info","message":"Test Case Completed : Verify Email ID already exist error message was displayed Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Started : Navigation to Registration page"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Completed : Login by user Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us linked in Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Verify user can search from homepage Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Navigation to Registration page Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Verify cookie message displayed at bottom Status : timedOut"}
+{"level":"info","message":"Test Case Completed : Verify user can click on images Status : timedOut"}
+{"level":"info","message":"Test Case Started : verify OTP verification is displayed on succesful login by user"}
+{"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : interrupted"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Completed : Login by user Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on blogs"}
+{"level":"info","message":"Test Case Completed : Verify user can click on blogs Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can use pagination options"}
+{"level":"info","message":"Test Case Completed : Verify user can use pagination options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by click on tags"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by click on tags Status : passed"}
+{"level":"info","message":"Test Case Started : Verify blog cards and tags were loaded after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify blog cards and tags were loaded after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles after clearing cookies Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us linked in Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us youtube"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us youtube Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us twitter"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us twitter Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us facebook"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us facebook Status : passed"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Completed : Verify cookie message displayed at bottom Status : passed"}
+{"level":"info","message":"Test Case Started : Verify logo is displayed"}
+{"level":"info","message":"Test Case Completed : Verify logo is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country Status : passed"}
+{"level":"info","message":"Test Case Started : Verify first element is after navigation bar"}
+{"level":"info","message":"Test Case Completed : Verify first element is after navigation bar Status : passed"}
+{"level":"info","message":"Test Case Started : Verify clicking on item hovers and displays items"}
+{"level":"info","message":"Test Case Completed : Verify clicking on item hovers and displays items Status : passed"}
+{"level":"info","message":"Test Case Started : Clicking arrow up moves to the top"}
+{"level":"info","message":"Test Case Completed : Clicking arrow up moves to the top Status : passed"}
+{"level":"info","message":"Test Case Started : Verify footer is visible and elements are clickable"}
+{"level":"info","message":"Test Case Completed : Verify footer is visible and elements are clickable Status : passed"}
+{"level":"info","message":"Test Case Started : Search from homepage"}
+{"level":"info","message":"Test Case Completed : Search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on store and other submenus"}
+{"level":"info","message":"Test Case Completed : Verify user can click on store and other submenus Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can submit requests"}
+{"level":"info","message":"Test Case Completed : Verify user can submit requests Status : interrupted"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles Status : interrupted"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on blogs"}
+{"level":"info","message":"Test Case Completed : Verify user can click on blogs Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can use pagination options"}
+{"level":"info","message":"Test Case Completed : Verify user can use pagination options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by click on tags"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by click on tags Status : passed"}
+{"level":"info","message":"Test Case Started : Verify blog cards and tags were loaded after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify blog cards and tags were loaded after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles after clearing cookies Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us linked in Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us youtube"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us youtube Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us twitter"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us twitter Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us facebook"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us facebook Status : passed"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Completed : Verify cookie message displayed at bottom Status : passed"}
+{"level":"info","message":"Test Case Started : Verify logo is displayed"}
+{"level":"info","message":"Test Case Completed : Verify logo is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country Status : passed"}
+{"level":"info","message":"Test Case Started : Verify first element is after navigation bar"}
+{"level":"info","message":"Test Case Completed : Verify first element is after navigation bar Status : passed"}
+{"level":"info","message":"Test Case Started : Verify clicking on item hovers and displays items"}
+{"level":"info","message":"Test Case Completed : Verify clicking on item hovers and displays items Status : passed"}
+{"level":"info","message":"Test Case Started : Clicking arrow up moves to the top"}
+{"level":"info","message":"Test Case Completed : Clicking arrow up moves to the top Status : passed"}
+{"level":"info","message":"Test Case Started : Verify footer is visible and elements are clickable"}
+{"level":"info","message":"Test Case Completed : Verify footer is visible and elements are clickable Status : passed"}
+{"level":"info","message":"Test Case Started : Search from homepage"}
+{"level":"info","message":"Test Case Completed : Search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on store and other submenus"}
+{"level":"info","message":"Test Case Completed : Verify user can click on store and other submenus Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can submit requests"}
+{"level":"info","message":"Test Case Completed : Verify user can submit requests Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change language after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change language after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to load page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to load page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify default country and language is US and English clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify default country and language is US and English clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify page is loaded with header announcement bannerclearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify page is loaded with header announcement bannerclearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Completed : Login by user Status : passed"}
+{"level":"info","message":"Test Case Started : verify OTP verification is displayed on succesful login by user"}
+{"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : passed"}
+{"level":"info","message":"Test Case Started : Verify error message on login by invalid credentials"}
+{"level":"info","message":"Test Case Completed : Verify error message on login by invalid credentials Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Completed : Verify user can click on images Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on share button"}
+{"level":"info","message":"Test Case Completed : Verify user can click on share button Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on specification tab"}
+{"level":"info","message":"Test Case Completed : Verify user can click on specification tab Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on add to cart under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on add to cart under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on request quote under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on request quote under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Completed : Verify user can search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters"}
+{"level":"info","message":"Test Case Completed : Verify user can able to apply filters Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can download multiple documents"}
+{"level":"info","message":"Test Case Completed : Verify user can download multiple documents Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user captcha was displayed on download page"}
+{"level":"info","message":"Test Case Completed : Verify user captcha was displayed on download page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of results"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of results Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on all options"}
+{"level":"info","message":"Test Case Completed : Verify user can click on all options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can able to apply filters after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can download multiple documents after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can download multiple documents after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user captcha was displayed on download page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user captcha was displayed on download page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of results after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of results after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Navigation to Registration page"}
+{"level":"info","message":"Test Case Completed : Navigation to Registration page Status : passed"}
+{"level":"info","message":"Test Case Started : verify user can fill data"}
+{"level":"info","message":"Test Case Completed : verify user can fill data Status : passed"}
+{"level":"info","message":"Test Case Started : Verify password rule is displayed"}
+{"level":"info","message":"Test Case Completed : Verify password rule is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Completing registration"}
+{"level":"info","message":"Test Case Completed : Completing registration Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Email ID already exist error message was displayed"}
+{"level":"info","message":"Test Case Completed : Verify Email ID already exist error message was displayed Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : passed"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on blogs"}
+{"level":"info","message":"Test Case Completed : Verify user can click on blogs Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can use pagination options"}
+{"level":"info","message":"Test Case Completed : Verify user can use pagination options Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by click on tags"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by click on tags Status : passed"}
+{"level":"info","message":"Test Case Started : Verify blog cards and tags were loaded after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify blog cards and tags were loaded after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of articles after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of articles after clearing cookies Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify title blog has read more links associated with cards after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify title blog has read more links associated with cards after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was navigated to blog by searching on blog page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was navigated to blog by searching on blog page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us linked in"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us linked in Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us youtube"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us youtube Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us twitter"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us twitter Status : passed"}
+{"level":"info","message":"Test Case Started : Verify Follow Us facebook"}
+{"level":"info","message":"Test Case Completed : Verify Follow Us facebook Status : passed"}
+{"level":"info","message":"Test Case Started : Verify cookie message displayed at bottom"}
+{"level":"info","message":"Test Case Completed : Verify cookie message displayed at bottom Status : passed"}
+{"level":"info","message":"Test Case Started : Verify logo is displayed"}
+{"level":"info","message":"Test Case Completed : Verify logo is displayed Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country Status : passed"}
+{"level":"info","message":"Test Case Started : Verify first element is after navigation bar"}
+{"level":"info","message":"Test Case Completed : Verify first element is after navigation bar Status : passed"}
+{"level":"info","message":"Test Case Started : Verify clicking on item hovers and displays items"}
+{"level":"info","message":"Test Case Completed : Verify clicking on item hovers and displays items Status : passed"}
+{"level":"info","message":"Test Case Started : Clicking arrow up moves to the top"}
+{"level":"info","message":"Test Case Completed : Clicking arrow up moves to the top Status : passed"}
+{"level":"info","message":"Test Case Started : Verify footer is visible and elements are clickable"}
+{"level":"info","message":"Test Case Completed : Verify footer is visible and elements are clickable Status : passed"}
+{"level":"info","message":"Test Case Started : Search from homepage"}
+{"level":"info","message":"Test Case Completed : Search from homepage Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on store and other submenus"}
+{"level":"info","message":"Test Case Completed : Verify user can click on store and other submenus Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can submit requests"}
+{"level":"info","message":"Test Case Completed : Verify user can submit requests Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change country after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change country after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to change language after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to change language after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user was able to load page after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user was able to load page after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify default country and language is US and English clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify default country and language is US and English clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify page is loaded with header announcement bannerclearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify page is loaded with header announcement bannerclearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Login by user"}
+{"level":"info","message":"Test Case Completed : Login by user Status : passed"}
+{"level":"info","message":"Test Case Started : verify OTP verification is displayed on succesful login by user"}
+{"level":"info","message":"Test Case Completed : verify OTP verification is displayed on succesful login by user Status : passed"}
+{"level":"info","message":"Test Case Started : Verify error message on login by invalid credentials"}
+{"level":"info","message":"Test Case Completed : Verify error message on login by invalid credentials Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on images"}
+{"level":"info","message":"Test Case Completed : Verify user can click on images Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on share button"}
+{"level":"info","message":"Test Case Completed : Verify user can click on share button Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on specification tab"}
+{"level":"info","message":"Test Case Completed : Verify user can click on specification tab Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on add to cart under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on add to cart under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on request quote under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on request quote under test menu Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on download under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on download under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on pagination under test menu after clearing cookies"}
+{"level":"info","message":"Test Case Completed : Verify user can click on pagination under test menu after clearing cookies Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can search from homepage"}
+{"level":"info","message":"Test Case Completed : Verify user can search from homepage Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters"}
+{"level":"info","message":"Test Case Completed : Verify user can able to apply filters Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can download multiple documents"}
+{"level":"info","message":"Test Case Completed : Verify user can download multiple documents Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user captcha was displayed on download page"}
+{"level":"info","message":"Test Case Completed : Verify user captcha was displayed on download page Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can view desired number of results"}
+{"level":"info","message":"Test Case Completed : Verify user can view desired number of results Status : passed"}
+{"level":"info","message":"Test Case Started : Verify user can click on all options"}
+{"level":"info","message":"Test Case Completed : Verify user can click on all options Status : timedOut"}
+{"level":"info","message":"Test Case Started : Verify user can able to apply filters after clearing cookies"}
+{"level":"info","message":"Test Case Started : Verify welcome is not chopped off"}
+{"level":"info","message":"Test Case Completed : Verify welcome is not chopped off Status : failed"}
